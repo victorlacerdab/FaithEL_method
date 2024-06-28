@@ -1,0 +1,4572 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:p="http://www.wikidata.org/prop/"
+     xmlns:bd="http://www.bigdata.com/rdf#"
+     xmlns:cc="http://creativecommons.org/ns#"
+     xmlns:wd="http://www.wikidata.org/entity/"
+     xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:geo="http://www.opengis.net/ont/geosparwd:Ql#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:hint="http://www.bigdata.com/wd:QueryHints#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:ownEnt="http://www.example.org/ImenesOntologyMasters/Class#"
+     xmlns:schema="http://schema.org/"
+     xmlns:ontolex="http://www.w3.org/ns/lemon/ontolex#"
+     xmlns:ownProp="http://www.example.org/ImenesOntologyMasters/Prop#"
+     xmlns:wikibase="http://wikiba.se/ontology#">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#related -->
+
+    <ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#related">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.wikidata.org/prop/P22 -->
+
+    <ObjectProperty rdf:about="http://www.wikidata.org/prop/P22">
+        <rdfs:range rdf:resource="http://www.example.org/ImenesOntologyMasters/Class#Father"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.wikidata.org/prop/P25 -->
+
+    <ObjectProperty rdf:about="http://www.wikidata.org/prop/P25">
+        <rdfs:range rdf:resource="http://www.example.org/ImenesOntologyMasters/Class#Mother"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.wikidata.org/prop/P26 -->
+
+    <ObjectProperty rdf:about="http://www.wikidata.org/prop/P26">
+        <rdfs:range rdf:resource="http://www.example.org/ImenesOntologyMasters/Class#Spouse"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.wikidata.org/prop/P3373 -->
+
+    <ObjectProperty rdf:about="http://www.wikidata.org/prop/P3373">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#related"/>
+        <inverseOf rdf:resource="http://www.wikidata.org/prop/P3373"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:range rdf:resource="http://www.example.org/ImenesOntologyMasters/Class#Sibling"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.wikidata.org/prop/P40 -->
+
+    <ObjectProperty rdf:about="http://www.wikidata.org/prop/P40">
+        <rdfs:range rdf:resource="http://www.example.org/ImenesOntologyMasters/Class#Child"/>
+    </ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.example.org/ImenesOntologyMasters/Class#Child -->
+
+    <Class rdf:about="http://www.example.org/ImenesOntologyMasters/Class#Child">
+        <rdfs:subClassOf rdf:resource="http://www.wikidata.org/entity/Q5"/>
+    </Class>
+    
+
+
+    <!-- http://www.example.org/ImenesOntologyMasters/Class#Father -->
+
+    <Class rdf:about="http://www.example.org/ImenesOntologyMasters/Class#Father">
+        <rdfs:subClassOf rdf:resource="http://www.wikidata.org/entity/Q5"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.wikidata.org/prop/P40"/>
+                <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.example.org/ImenesOntologyMasters/Class#Female -->
+
+    <Class rdf:about="http://www.example.org/ImenesOntologyMasters/Class#Female">
+        <rdfs:subClassOf rdf:resource="http://www.wikidata.org/entity/Q5"/>
+    </Class>
+    
+
+
+    <!-- http://www.example.org/ImenesOntologyMasters/Class#Male -->
+
+    <Class rdf:about="http://www.example.org/ImenesOntologyMasters/Class#Male">
+        <rdfs:subClassOf rdf:resource="http://www.wikidata.org/entity/Q5"/>
+    </Class>
+    
+
+
+    <!-- http://www.example.org/ImenesOntologyMasters/Class#Mother -->
+
+    <Class rdf:about="http://www.example.org/ImenesOntologyMasters/Class#Mother">
+        <rdfs:subClassOf rdf:resource="http://www.wikidata.org/entity/Q5"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.wikidata.org/prop/P40"/>
+                <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.example.org/ImenesOntologyMasters/Class#Sibling -->
+
+    <Class rdf:about="http://www.example.org/ImenesOntologyMasters/Class#Sibling">
+        <rdfs:subClassOf rdf:resource="http://www.wikidata.org/entity/Q5"/>
+    </Class>
+    
+
+
+    <!-- http://www.example.org/ImenesOntologyMasters/Class#Spouse -->
+
+    <Class rdf:about="http://www.example.org/ImenesOntologyMasters/Class#Spouse">
+        <rdfs:subClassOf rdf:resource="http://www.wikidata.org/entity/Q5"/>
+    </Class>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q5 -->
+
+    <Class rdf:about="http://www.wikidata.org/entity/Q5"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q101322 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q101322"/>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q102140 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q102140">
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q235418"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q10323203 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q10323203">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q5353300"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q698890"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q10323222 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q10323222">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q5353300"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q698890"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q10323244 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q10323244">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q5353300"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q698890"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q10323269 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q10323269">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q5353300"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q698890"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q10323292 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q10323292">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q5353300"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q698890"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q10323773 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q10323773">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q5353300"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q698890"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1052301 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1052301">
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q131203"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1058383 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1058383">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q942280"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1063751 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1063751">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q355112"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1065802 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1065802">
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q131203"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1091124 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1091124">
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q359215"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q373015"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1091520 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1091520">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q1091530"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q3738408"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1091530 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1091530">
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q1091520"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1096611 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1096611">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q963719"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1104636 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1104636">
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q4858486"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q11090991 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q11090991">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q5353300"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q698890"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q11091019 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q11091019">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q5353300"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q698890"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q11091072 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q11091072">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q5353300"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q698890"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q11091100 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q11091100">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q5353300"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q698890"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q112104 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q112104">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q156659"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q183579"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1121970 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1121970">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q235418"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1133738 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1133738">
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q131203"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1138595 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1138595">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q1369215"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1146603 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1146603">
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q187550"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1183310 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1183310">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q4356466"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1186147 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1186147">
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q356564"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1191183 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1191183">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q187550"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q838180"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q11989934 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q11989934">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q235418"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1216049 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1216049">
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q726279"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q121973 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q121973">
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q131203"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1226617 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1226617">
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q726279"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1236399 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1236399">
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q131203"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1241338 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1241338">
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q726279"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1247148 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1247148">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q2013986"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1259232 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1259232">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q470713"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q169123"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q319638"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q942280"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1272142 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1272142">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q1290518"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1277671 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1277671">
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q1282676"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q12812195 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q12812195">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q329708"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1282676 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1282676">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q1277671"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q1283158"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1283158 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1283158">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q1282676"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1290518 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1290518">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q645857"/>
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q4763175"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q3726692"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q1272142"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q129308 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q129308">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q235418"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q12967 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q12967">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q12971"/>
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q72795"/>
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q234047"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q154971"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q468968"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q555362"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q170197"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q237318"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q261129"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q690327"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q12971 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q12971">
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q12967"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1305838 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1305838">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q28531"/>
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q2266324"/>
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q2399640"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q1887943"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q252724"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q328005"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q463174"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q921825"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q1934858"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q2084728"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q2086454"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q2159281"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q22876077"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q242598"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q527673"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q130818 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q130818">
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q605744"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q130834 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q130834">
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q156659"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q183579"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q131122 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q131122">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q131203"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q192107"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q131203 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q131203">
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q131122"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q101322"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q121973"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q93172"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q1052301"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q1065802"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q1236399"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q1365927"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q140001"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q165938"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q180287"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q185747"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q189175"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q189347"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q192107"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q194012"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q199647"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q364688"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q403964"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q465518"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q5383161"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q578584"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q617977"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q6612"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q753294"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q829669"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q898947"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q936486"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q975581"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1357271 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1357271">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q235418"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1365927 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1365927">
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q131203"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1369215 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1369215">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q229702"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q1138595"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q204797"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q946939"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q3294442"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q5048978"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q7144855"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q138048 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q138048">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q14356"/>
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q390099"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1380850 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1380850">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q1979505"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q138232 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q138232">
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q521487"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q140001 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q140001">
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q131203"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1406351 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1406351">
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q169512"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q2630473"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q604419"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q14356 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q14356">
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q390099"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q138048"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1445064 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1445064">
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q2555139"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q297194"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1464 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1464">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q466947"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1480 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1480">
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q466947"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q14946987 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q14946987">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q887170"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q15139243 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q15139243">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q329708"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q887170"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q152923 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q152923">
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q170197"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q153586 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q153586">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q154041"/>
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q57654"/>
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q170394"/>
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q276742"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q158248"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q2616482"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q274428"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q3429250"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q452932"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q819778"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q157812"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q1755340"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q2411320"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q2411332"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q2411371"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q2411381"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q2411396"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q2622086"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q262989"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q391053"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q559253"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q672470"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q693480"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1536527 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1536527">
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q609650"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q154041 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q154041">
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q153586"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q15439085 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q15439085">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q169512"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q565780"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q154971 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q154971">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q12967"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q156659 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q156659">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q130834"/>
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q164504"/>
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q57653"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q112104"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q157491"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q183579"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q2279884"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q242687"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q4605238"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q84239"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q51056"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q618316"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q78519"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q84192"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q93377"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q157491 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q157491">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q156659"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q183579"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q157799 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q157799">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q297194"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q157812 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q157812">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q153586"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q2411332"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q158248 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q158248">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q153586"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q15829810 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q15829810">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q18754786"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q374220"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q511832"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q6276792"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q16019673 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q16019673">
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q16186637"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q161419 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q161419">
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q605744"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q726279"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q16146696 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q16146696">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q887170"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q16148349 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q16148349">
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q6827105"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q16149641 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q16149641">
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q466947"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q16186637 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q16186637">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q16019673"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q16200213 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q16200213">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q887170"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q163043 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q163043">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q169512"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q565780"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q163936 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q163936">
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q2060421"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q3601360"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q164504 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q164504">
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q156659"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q183579"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q165938 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q165938">
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q131203"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q167173 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q167173">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q312110"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q16851600 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q16851600">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q329708"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q887170"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q16859543 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q16859543">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q169512"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q565780"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q169123 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q169123">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q1259232"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q169512 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q169512">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q53438"/>
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q84276"/>
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q36234"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q15439085"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q163043"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q16859543"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q215988"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q237706"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q446240"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q565780"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q58020"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q60657"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q63605"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q70244"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q1406351"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q183226"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q229826"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q2325634"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q2630473"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q312325"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q604419"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1697035 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1697035">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q2640044"/>
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q1891427"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q1883786"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q96836"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1699735 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1699735">
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q4726369"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q5899444"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q170182 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q170182">
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q183579"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q170197 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q170197">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q12967"/>
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q234047"/>
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q152923"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q237318"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q261129"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q690327"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q93390"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q170394 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q170394">
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q153586"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1709891 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1709891">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q349062"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q171977 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q171977">
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q838180"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1755340 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1755340">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q153586"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q2411332"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1770677 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1770677">
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q560939"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q178525 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q178525">
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q235418"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q180073 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q180073">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q356564"/>
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q235418"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q180222 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q180222">
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q726279"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q180287 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q180287"/>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q180920 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q180920">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q5353300"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q698890"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q182637 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q182637">
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q2060421"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q3601360"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q183226 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q183226">
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q169512"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q2630473"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q604419"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q183579 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q183579">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q130834"/>
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q164504"/>
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q170182"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q112104"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q156659"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q157491"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q2279884"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q242687"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q4605238"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q84239"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q18378893 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q18378893">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q19282024"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q19975809"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q184216 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q184216">
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q605744"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q726279"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q184437 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q184437">
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q726279"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q185126 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q185126">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q373015"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q185747 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q185747">
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q131203"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q18754786 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q18754786">
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q15829810"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q187550 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q187550">
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q5353737"/>
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q1146603"/>
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q247408"/>
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q6347693"/>
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q9385079"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q1191183"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q838180"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q313641"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1883786 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1883786">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q1697035"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q96836"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1887943 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1887943">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q1305838"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1891427 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1891427"/>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q189175 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q189175">
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q131203"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q192107"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q189347 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q189347">
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q131203"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q189527 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q189527">
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q726279"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q605744"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q192107 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q192107">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q131122"/>
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q131203"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q189175"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q659437"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q79999"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q93172"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q19282024 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q19282024">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q6193704"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q18378893"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q19975809"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1934858 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1934858">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q1305838"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q242598"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q194012 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q194012">
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q131203"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1979505 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q1979505">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q2131262"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q1380850"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q2397531"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q19892412 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q19892412">
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q2724084"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q199647 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q199647">
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q131203"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q19975809 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q19975809">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q6193704"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q18378893"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q19282024"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q2006191 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q2006191">
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q356564"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q2013986 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q2013986">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q2109015"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q2453051"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q1247148"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q2015941 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q2015941">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q236970"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q312110"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q2026887 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q2026887">
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q297194"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q204077 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q204077">
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q5353300"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q698890"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q204797 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q204797">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q1369215"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q2058801 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q2058801">
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q466947"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q2059605 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q2059605">
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q2060421"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q3601360"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q2060421 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q2060421">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q5730011"/>
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q961790"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q163936"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q182637"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q2059605"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q3601360"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q380513"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q2084728 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q2084728">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q1305838"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q242598"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q2086454 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q2086454">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q1305838"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q242598"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q2109015 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q2109015">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q2013986"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q2112306 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q2112306">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q1282676"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q212890 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q212890">
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q236970"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q2131262 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q2131262">
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q1979505"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q213696 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q213696">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q233198"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q213716 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q213716">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q233198"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q215036 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q215036">
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q93711"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q215903 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q215903">
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q233198"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q2159281 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q2159281">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q1305838"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q215988 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q215988">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q169512"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q565780"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q217098 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q217098">
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q2724084"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q22006645 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q22006645">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q4858486"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q222805 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q222805">
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q466947"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q2253832 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q2253832">
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q2519772"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q4356466"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q2266324 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q2266324">
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q1305838"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q2279884 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q2279884">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q156659"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q183579"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q22876077 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q22876077">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q1305838"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q229702 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q229702">
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q1369215"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q229826 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q229826">
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q169512"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q2630473"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q604419"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q231755 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q231755">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q297194"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q232144 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q232144">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q235418"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q232155 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q232155">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q44361"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q2325634 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q2325634">
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q169512"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q2630473"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q604419"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q233187 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q233187">
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q2375184"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q264368"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q233198 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q233198">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q215903"/>
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q261809"/>
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q44361"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q213696"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q213716"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q64462"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q66535"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q66698"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q44530"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q44785"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q60610"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q60796"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q61234"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q61241"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q62036"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q77067"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q234047 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q234047">
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q12967"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q170197"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q234249 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q234249">
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q44361"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q234410 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q234410">
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q299645"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q235238 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q235238">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q235418"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q235418 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q235418">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q102140"/>
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q178525"/>
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q356564"/>
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q367387"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q1121970"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q11989934"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q129308"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q1357271"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q232144"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q235238"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q235484"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q235637"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q236293"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q314550"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q42305"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q719148"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q180073"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q235484 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q235484">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q235418"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q235637 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q235637">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q235418"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q236293 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q236293">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q235418"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q236970 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q236970">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q47595"/>
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q977455"/>
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q295850"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q2015941"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q312110"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q3637283"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q3638489"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q3904375"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q706068"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q926544"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q954274"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q212890"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q2840038"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q3306659"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q4460880"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q4755558"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q236981 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q236981">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q312110"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q237318 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q237318">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q12967"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q170197"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q2375184 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q2375184">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q318091"/>
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q233187"/>
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q603352"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q264368"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q356145"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q426677"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q610738"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q947511"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q506415"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q237706 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q237706">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q169512"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q565780"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q238609 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q238609">
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q240604"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q349062"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q2397531 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q2397531">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q1979505"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q2559721"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q2399640 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q2399640">
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q1305838"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q242598"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q240604 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q240604">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q437271"/>
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q238609"/>
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q41610"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q349062"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q7184745"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q86846"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q41849"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q2411320 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q2411320">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q153586"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q2411332"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q2411332 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q2411332">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q153586"/>
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q276742"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q157812"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q1755340"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q2411320"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q2411371"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q2411396"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q2622086"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q262989"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q391053"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q559253"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q672470"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q693480"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q2411371 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q2411371">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q153586"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q2411332"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q2411381 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q2411381">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q153586"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q2411396 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q2411396">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q153586"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q2411332"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q241165 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q241165">
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q452984"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q241179 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q241179">
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q312110"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q242598 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q242598">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q1305838"/>
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q2399640"/>
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q314457"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q1934858"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q2084728"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q2086454"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q527673"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q313015"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q350330"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q242687 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q242687">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q156659"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q183579"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q2446902 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q2446902">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q609650"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q2453051 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q2453051">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q2013986"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q2467554 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q2467554">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q3738408"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q2469933 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q2469933">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q312110"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q247408 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q247408">
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q187550"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q2519772 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q2519772">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q2253832"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q252724 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q252724">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q1305838"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q2555139 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q2555139">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q434760"/>
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q1445064"/>
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q343101"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q297194"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q2559721 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q2559721">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q2397531"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q2574542 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q2574542">
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q329708"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q261129 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q261129">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q12967"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q170197"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q2616482 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q2616482">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q153586"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q261769 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q261769">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q373015"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q261809 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q261809">
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q233198"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q2622086 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q2622086">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q153586"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q2411332"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q262989 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q262989">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q153586"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q2411332"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q2630473 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q2630473">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q36234"/>
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q169512"/>
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q976797"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q1406351"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q183226"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q229826"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q2325634"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q312325"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q604419"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q2640044 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q2640044">
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q1697035"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q96836"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q264368 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q264368">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q318091"/>
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q233187"/>
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q714803"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q2375184"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q356145"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q426677"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q610738"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q947511"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q588360"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q2658379 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q2658379">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q329708"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q266025 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q266025">
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q312110"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q269058 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q269058"/>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q269691 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q269691">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q299645"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q452984"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q269928 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q269928">
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q373015"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q2724084 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q2724084">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q217098"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q274428 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q274428">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q153586"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q276304 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q276304">
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q312641"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q276742 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q276742">
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q153586"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q2411332"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q283107 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q283107">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q299645"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q452984"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q2840038 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q2840038">
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q236970"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q28447589 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q28447589">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q4858486"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q285102 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q285102">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q4726369"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q5899444"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q28531 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q28531">
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q1305838"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q287563 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q287563">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q297194"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q292698 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q292698">
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q698890"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q295850 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q295850">
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q236970"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q297194 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q297194">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q434760"/>
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q1445064"/>
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q2026887"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q2555139"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q157799"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q231755"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q287563"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q324085"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q359596"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q299612 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q299612">
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q547970"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q299645 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q299645">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q3044"/>
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q234410"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q269691"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q283107"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q302212"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q43974"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q452984"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q723791"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q827676"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q920516"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q946829"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q333319"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q3002934 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q3002934">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q691678"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q3011344 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q3011344">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q560939"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q302212 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q302212">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q299645"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q452984"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q3035357 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q3035357">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q963719"/>
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q3345941"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q3044 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q3044">
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q299645"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q452984"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q3086735 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q3086735">
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q131203"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q312110 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q312110">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q47595"/>
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q241179"/>
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q266025"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q2015941"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q236970"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q3637283"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q3638489"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q3904375"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q4722030"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q706068"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q926544"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q954274"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q167173"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q236981"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q2469933"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q316859"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q4722123"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q732899"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q312325 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q312325">
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q169512"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q2630473"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q604419"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q312641 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q312641">
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q276304"/>
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q5362322"/>
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q6531068"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q313015 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q313015">
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q242598"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q313333 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q313333">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q5353300"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q698890"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q313641 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q313641">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q187550"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q314457 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q314457">
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q242598"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q3144886 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q3144886">
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q547970"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q560939"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q314550 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q314550">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q235418"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q316859 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q316859">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q312110"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q3178707 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q3178707">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q5353300"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q698890"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q318091 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q318091">
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q2375184"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q264368"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q319638 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q319638">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q1259232"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q320937 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q320937">
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q808498"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q824532"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q324085 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q324085">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q297194"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q326198 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q326198">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q808498"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q328005 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q328005">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q1305838"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q3294442 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q3294442">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q1369215"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q329708 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q329708">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q37084"/>
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q2574542"/>
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q441850"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q12812195"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q2658379"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q518569"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q15139243"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q16851600"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q887170"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q3306659 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q3306659">
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q236970"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q333319 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q333319">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q299645"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q3345941 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q3345941">
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q3035357"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q340545 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q340545">
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q131203"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q3429250 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q3429250">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q153586"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q343101 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q343101">
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q2555139"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q349062 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q349062">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q437271"/>
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q238609"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q240604"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q7184745"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q86846"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q1709891"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q349097"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q349097 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q349097">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q349062"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q350330 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q350330">
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q242598"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q350769 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q350769">
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q359215"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q3526361 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q3526361">
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q349062"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q355112 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q355112">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q1063751"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q355348 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q355348">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q918990"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q356145 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q356145">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q2375184"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q264368"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q356564 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q356564">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q478057"/>
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q1186147"/>
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q2006191"/>
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q235418"/>
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q4877223"/>
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q5389893"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q380380"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q180073"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q685306"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q359215 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q359215">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q350769"/>
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q3624266"/>
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q1091124"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q373015"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q4893550"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q359596 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q359596">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q297194"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q3601360 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q3601360">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q961790"/>
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q2060421"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q163936"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q182637"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q2059605"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q380513"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q36234 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q36234">
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q169512"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q2630473"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q604419"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q3624266 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q3624266">
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q359215"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q3637283 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q3637283">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q236970"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q312110"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q3638489 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q3638489">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q236970"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q312110"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q364688 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q364688">
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q131203"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q367387 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q367387">
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q235418"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q37084 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q37084">
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q329708"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q3726692 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q3726692">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q1290518"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q373015 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q373015">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q359215"/>
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q1091124"/>
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q269928"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q4893550"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q185126"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q261769"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q446544"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q3738408 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q3738408">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q1091520"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q2467554"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q374220 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q374220"/>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q380380 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q380380">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q356564"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q380513 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q380513">
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q2060421"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q3601360"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q390099 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q390099">
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q14356"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q138048"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q3904375 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q3904375">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q236970"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q312110"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q390492 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q390492">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q2446902"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q391053 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q391053">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q153586"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q2411332"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q403964 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q403964">
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q131203"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q4126528 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q4126528">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q887170"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q41610 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q41610">
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q240604"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q41849 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q41849">
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q240604"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q42305 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q42305">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q235418"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q426677 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q426677">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q2375184"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q264368"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q434760 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q434760">
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q2555139"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q297194"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q4356466 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q4356466">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q2253832"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q1183310"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q437271 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q437271">
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q240604"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q349062"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q43974 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q43974">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q299645"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q452984"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q441850 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q441850">
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q329708"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q887170"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q44319 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q44319">
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q44361"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q44361 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q44361">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q44319"/>
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q234249"/>
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q233198"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q232155"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q57209"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q57531"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q57653"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q57662"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q57943"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q61221"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q61548"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q44530"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q44785"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q60610"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q60796"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q61234"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q61241"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q62036"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q77067"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q44530 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q44530">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q44361"/>
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q233198"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q4460880 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q4460880">
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q236970"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q446240 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q446240">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q169512"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q565780"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q446544 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q446544">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q373015"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q447103 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q447103">
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q963719"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q44785 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q44785">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q44361"/>
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q233198"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q452932 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q452932">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q153586"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q452984 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q452984">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q3044"/>
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q241165"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q269691"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q283107"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q299645"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q302212"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q43974"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q723791"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q827676"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q920516"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q946829"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q4605238 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q4605238">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q156659"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q183579"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q462124 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q462124">
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q12967"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q463174 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q463174">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q1305838"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q465518 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q465518">
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q131203"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q466947 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q466947">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q222805"/>
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q1480"/>
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q2058801"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q1464"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q16149641"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q468968 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q468968">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q12967"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q470713 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q470713">
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q1259232"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q4722030 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q4722030">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q312110"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q4722123 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q4722123">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q312110"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q4726369 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q4726369">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q1699735"/>
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q4924916"/>
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q513091"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q285102"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q5899444"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q4755558 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q4755558">
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q236970"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q47595 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q47595">
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q236970"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q312110"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q4763175 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q4763175">
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q1290518"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q478057 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q478057">
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q356564"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q4858486 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q4858486">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q1104636"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q4877223 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q4877223">
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q356564"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q4893550 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q4893550">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q359215"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q373015"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q4924916 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q4924916">
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q4726369"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q5899444"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q5048978 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q5048978">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q1369215"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q506415 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q506415">
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q2375184"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q51056 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q51056">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q156659"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q511832 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q511832"/>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q513091 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q513091">
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q4726369"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q518569 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q518569">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q329708"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q521487 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q521487">
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q138232"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q527673 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q527673">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q1305838"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q242598"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q53438 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q53438">
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q169512"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q565780"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q5353300 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q5353300">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q204077"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q10323203"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q10323222"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q10323244"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q10323269"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q10323292"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q10323773"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q11090991"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q11091019"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q11091072"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q11091100"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q180920"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q313333"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q3178707"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q5353322"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q557261"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q571756"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q580624"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q698890"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q699893"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q706827"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q706866"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q706905"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q707386"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q711798"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q735448"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q5353322 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q5353322">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q5353300"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q698890"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q5353737 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q5353737">
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q187550"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q838180"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q5362322 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q5362322">
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q312641"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q5362448 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q5362448">
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q7342246"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q5383161 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q5383161">
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q131203"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q5389893 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q5389893">
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q356564"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q547970 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q547970">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q299612"/>
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q3144886"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q561182"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q560939"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q5537157 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q5537157">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q7324278"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q555362 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q555362">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q12967"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q557261 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q557261">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q5353300"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q698890"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q559253 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q559253">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q153586"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q2411332"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q560939 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q560939">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q547970"/>
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q3144886"/>
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q1770677"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q3011344"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q983155"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q712674"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q561182 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q561182">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q547970"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q5623747 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q5623747">
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q726279"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q565780 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q565780">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q53438"/>
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q84276"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q15439085"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q163043"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q16859543"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q169512"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q215988"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q237706"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q446240"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q58020"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q60657"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q63605"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q70244"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q571756 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q571756">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q5353300"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q698890"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q57209 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q57209">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q44361"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q5730011 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q5730011">
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q2060421"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q57531 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q57531">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q44361"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q57653 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q57653">
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q156659"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q44361"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q57654 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q57654">
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q153586"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q57662 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q57662">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q44361"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q578584 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q578584">
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q131203"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q57943 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q57943">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q44361"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q58020 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q58020">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q169512"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q565780"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q580624 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q580624">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q5353300"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q698890"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q588360 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q588360">
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q264368"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q5899444 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q5899444">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q1699735"/>
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q4924916"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q285102"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q4726369"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q603352 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q603352">
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q2375184"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q604419 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q604419">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q36234"/>
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q169512"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q1406351"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q183226"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q229826"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q2325634"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q2630473"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q312325"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q605744 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q605744">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q161419"/>
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q189527"/>
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q184216"/>
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q726279"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q130818"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q60610 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q60610">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q44361"/>
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q233198"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q60657 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q60657">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q169512"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q565780"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q60796 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q60796">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q44361"/>
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q233198"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q609650 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q609650">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q1536527"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q2446902"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q610738 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q610738">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q2375184"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q264368"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q6116483 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q6116483">
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q7332058"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q61221 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q61221">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q44361"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q61234 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q61234">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q44361"/>
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q233198"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q61241 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q61241">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q44361"/>
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q233198"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q61548 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q61548">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q44361"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q617977 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q617977">
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q131203"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q618316 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q618316">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q156659"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q6193704 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q6193704">
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q19282024"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q19975809"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q62036 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q62036">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q44361"/>
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q233198"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q6276792 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q6276792"/>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q6347693 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q6347693">
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q187550"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q63605 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q63605">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q169512"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q565780"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q643456 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q643456">
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q726279"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q64462 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q64462">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q233198"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q645857 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q645857">
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q1290518"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q6531068 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q6531068">
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q312641"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q659437 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q659437">
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q192107"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q6612 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q6612">
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q131203"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q66535 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q66535">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q233198"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q66698 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q66698">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q233198"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q672470 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q672470">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q153586"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q2411332"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q6827105 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q6827105">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q16148349"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q685306 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q685306">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q356564"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q690327 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q690327">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q12967"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q170197"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q691678 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q691678">
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q3002934"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q693480 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q693480">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q153586"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q2411332"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q6949555 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q6949555">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q1282676"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q698890 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q698890">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q204077"/>
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q292698"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q10323203"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q10323222"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q10323244"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q10323269"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q10323292"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q10323773"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q11090991"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q11091019"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q11091072"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q11091100"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q180920"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q313333"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q3178707"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q5353300"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q5353322"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q557261"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q571756"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q580624"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q699893"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q706827"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q706866"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q706905"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q707386"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q711798"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q735448"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q699893 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q699893">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q5353300"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q698890"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q70244 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q70244">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q169512"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q565780"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q706068 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q706068">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q236970"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q312110"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q706827 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q706827">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q5353300"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q698890"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q706866 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q706866">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q5353300"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q698890"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q706905 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q706905">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q5353300"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q698890"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q707386 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q707386">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q5353300"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q698890"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q7114063 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q7114063">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q4858486"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q711798 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q711798">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q5353300"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q698890"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q712674 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q712674">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q560939"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q7144855 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q7144855">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q1369215"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q714803 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q714803">
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q264368"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q7184745 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q7184745">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q240604"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q349062"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q719148 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q719148">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q235418"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q723791 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q723791">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q299645"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q452984"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q726279 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q726279">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q161419"/>
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q184216"/>
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q189527"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q1216049"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q1226617"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q1241338"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q180222"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q184437"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q269058"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q5623747"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q605744"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q643456"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q761597"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q72795 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q72795">
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q12967"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q7324278 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q7324278">
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q5537157"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q7342246"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q732899 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q732899">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q312110"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q7332058 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q7332058">
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q6116483"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q7342246 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q7342246">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q7324278"/>
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q5362448"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q735448 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q735448">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q5353300"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q698890"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q753294 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q753294">
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q131203"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q761597 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q761597">
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q726279"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q77067 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q77067">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q44361"/>
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q233198"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q7811733 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q7811733">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q4858486"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q78519 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q78519">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q156659"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q79999 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q79999">
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q192107"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q808498 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q808498">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q320937"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q824532"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q326198"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q808499"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q808499 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q808499">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q808498"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q808503 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q808503">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q824532"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q819778 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q819778">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q153586"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q824532 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q824532">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q320937"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q808498"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q808503"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q827676 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q827676">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q299645"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q452984"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q829669 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q829669">
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q131203"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q838180 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q838180">
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q5353737"/>
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q171977"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q1191183"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q187550"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q84192 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q84192">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q156659"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q84239 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q84239">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q156659"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q183579"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q84276 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q84276">
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q169512"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q565780"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q86846 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q86846">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q240604"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q349062"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q887170 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q887170">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q329708"/>
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q441850"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q15139243"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q16851600"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q14946987"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q16146696"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q16200213"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q4126528"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q898947 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q898947">
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q131203"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q918990 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q918990"/>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q920516 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q920516">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q299645"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q452984"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q921825 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q921825">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q1305838"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q926544 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q926544">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q236970"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q312110"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q93172 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q93172">
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q192107"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q93377 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q93377">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q156659"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q93390 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q93390">
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q170197"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q936486 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q936486">
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q131203"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q93711 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q93711">
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q215036"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q9385079 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q9385079">
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q187550"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q942280 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q942280">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q1259232"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q1058383"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q946829 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q946829">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q299645"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q452984"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q946939 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q946939">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q1369215"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q947511 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q947511">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q2375184"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q264368"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q954274 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q954274">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q236970"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q312110"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q961790 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q961790">
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q2060421"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q3601360"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q963719 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q963719">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q447103"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q1096611"/>
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q3035357"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q96836 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q96836">
+        <p:P22 rdf:resource="http://www.wikidata.org/entity/Q2640044"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q1697035"/>
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q1883786"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q975581 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q975581">
+        <p:P25 rdf:resource="http://www.wikidata.org/entity/Q131203"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q976797 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q976797">
+        <p:P26 rdf:resource="http://www.wikidata.org/entity/Q2630473"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q977455 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q977455">
+        <p:P40 rdf:resource="http://www.wikidata.org/entity/Q236970"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q983155 -->
+
+    <NamedIndividual rdf:about="http://www.wikidata.org/entity/Q983155">
+        <p:P3373 rdf:resource="http://www.wikidata.org/entity/Q560939"/>
+    </NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
